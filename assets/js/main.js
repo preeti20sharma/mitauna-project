@@ -563,40 +563,41 @@
                 s = parseInt(a.val(), 10);
             !isNaN(s) && s > 1 && a.val(s - 1)
         }))
-    })), e(".advance-search-active").click((function (t) {
-        t.stopPropagation(), e(this).toggleClass("active");
-        let a = e(".advance-search-wrapper"),
-            s = e(this).find("i");
-        a.hasClass("open") ? (a.removeClass("open").hide(), s.removeClass("fa-times").addClass("fa-sliders-up")) : (a.addClass("open").show(), s.removeClass("fa-sliders-up").addClass("fa-times"))
-    })), e(document).click((function (t) {
-        e(t.target).closest(".advance-search-wrapper, .advance-search-active, .select-group-wrapper").length || (e(".advance-search-wrapper").removeClass("open").hide(), e(".advance-search-active").removeClass("active"), e(".advance-search-active i").removeClass("fa-times").addClass("fa-sliders-up"))
-    })), document.addEventListener("DOMContentLoaded", (function () {
-        const e = document.querySelectorAll(".map-icon"),
-            t = document.querySelectorAll(".map-popular-list");
-        let a = null;
-        e.forEach((e, s) => {
-            e.addEventListener("mouseenter", (function () {
-                t.forEach(e => e.classList.remove("show"));
-                document.querySelector(".map-popular-list" + (s + 1)).classList.add("show"), a = s + 1
+    })),
+        e(".advance-search-active").click((function (t) {
+            t.stopPropagation(), e(this).toggleClass("active");
+            let a = e(".advance-search-wrapper"),
+                s = e(this).find("i");
+            a.hasClass("open") ? (a.removeClass("open").hide(), s.removeClass("fa-times").addClass("fa-sliders-up")) : (a.addClass("open").show(), s.removeClass("fa-sliders-up").addClass("fa-times"))
+        })), e(document).click((function (t) {
+            e(t.target).closest(".advance-search-wrapper, .advance-search-active, .select-group-wrapper").length || (e(".advance-search-wrapper").removeClass("open").hide(), e(".advance-search-active").removeClass("active"), e(".advance-search-active i").removeClass("fa-times").addClass("fa-sliders-up"))
+        })), document.addEventListener("DOMContentLoaded", (function () {
+            const e = document.querySelectorAll(".map-icon"),
+                t = document.querySelectorAll(".map-popular-list");
+            let a = null;
+            e.forEach((e, s) => {
+                e.addEventListener("mouseenter", (function () {
+                    t.forEach(e => e.classList.remove("show"));
+                    document.querySelector(".map-popular-list" + (s + 1)).classList.add("show"), a = s + 1
+                }))
+            }), t.forEach(e => {
+                e.addEventListener("mouseenter", (function () {
+                    this.classList.add("show")
+                })), e.addEventListener("mouseleave", (function () {
+                    this.classList.remove("show")
+                }))
+            }), document.addEventListener("click", (function (e) {
+                e.target.closest(".map-icon") || e.target.closest(".map-popular-list") || t.forEach(e => e.classList.remove("show"))
             }))
-        }), t.forEach(e => {
-            e.addEventListener("mouseenter", (function () {
-                this.classList.add("show")
-            })), e.addEventListener("mouseleave", (function () {
-                this.classList.remove("show")
+        })), e(document).ready((function () {
+            e(".add-explore-city-icon").on("mouseenter", (function () {
+                e(this).next(".explore-card").addClass("active")
+            })), e(".add-explore-city-icon, .explore-card").on("mouseleave", (function (t) {
+                e(t.relatedTarget).closest(".add-explore-city-icon, .explore-card").length || e(".explore-card").removeClass("active")
             }))
-        }), document.addEventListener("click", (function (e) {
-            e.target.closest(".map-icon") || e.target.closest(".map-popular-list") || t.forEach(e => e.classList.remove("show"))
-        }))
-    })), e(document).ready((function () {
-        e(".add-explore-city-icon").on("mouseenter", (function () {
-            e(this).next(".explore-card").addClass("active")
-        })), e(".add-explore-city-icon, .explore-card").on("mouseleave", (function (t) {
-            e(t.relatedTarget).closest(".add-explore-city-icon, .explore-card").length || e(".explore-card").removeClass("active")
-        }))
-    })), e(".hover-item").hover((function () {
-        e(this).addClass("item-active"), e(this).siblings().removeClass("item-active")
-    })), e(".reveal").length) {
+        })), e(".hover-item").hover((function () {
+            e(this).addClass("item-active"), e(this).siblings().removeClass("item-active")
+        })), e(".reveal").length) {
         gsap.registerPlugin(ScrollTrigger), document.querySelectorAll(".reveal").forEach(e => {
             let t = e.querySelector("img"),
                 a = gsap.timeline({

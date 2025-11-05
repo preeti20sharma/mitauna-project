@@ -229,8 +229,8 @@ h6 {
     color: var(--title-color);
     text-transform: none;
     font-weight: 700;
-    line-height: 1.2;
-    margin: 0 0 15px 0
+    /* line-height: 1.2; */
+    /* margin: 0 0 15px 0 */
 }
 
 .h1,
@@ -8758,7 +8758,16 @@ ol.wp-block-rss {
 }
 
 .about-logo {
-    margin-bottom: 15px
+    margin-bottom: 15px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 8px;
+    width: fit-content;
+}
+
+.about-logo img {
+    max-width: 150px;
+    height: auto;
 }
 
 .th-widget-about .about-logo {
@@ -10797,7 +10806,7 @@ ol.wp-block-rss {
 
 .footer-all-widget-wrapper .footer-right-wrap .footer-item-wrap {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1.15fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 50px
 }
 
@@ -10877,7 +10886,7 @@ ol.wp-block-rss {
 
 .footer-default {
     background-position: top center;
-    background-color: var(--gray-color)
+    background-color: #011325;
 }
 
 .footer-default .widget-area {
@@ -11327,7 +11336,7 @@ ol.wp-block-rss {
 
 @media (max-width: 1399px) {
     .footer-default.footer-layout3 .widget-area {
-        padding: 45px 0 56px
+        padding: 45px 0 0
     }
 }
 
@@ -13819,7 +13828,7 @@ ul.comment-list:has(>.th-comment-item ~ .th-comment-item):first-child>.th-post-c
 .hero-search-wrapper .hero-search-group-wrapper .form-group {
     margin: 0;
     height: 42px;
-    margin-right: 45px;
+    margin-right: 25px;
     padding-right: 0px
 }
 
@@ -14035,7 +14044,7 @@ ul.comment-list:has(>.th-comment-item ~ .th-comment-item):first-child>.th-post-c
     }
 
     .advance-search-wrapper.stye-2 {
-        margin-top: -85px
+        margin-top: -75px
     }
 }
 
@@ -29360,7 +29369,8 @@ input {
 .project-card {
     background: #FFFFFF;
     border-radius: 20px;
-    padding: 20px 20px 50px 20px
+    padding: 16px 20px 14px 20px;
+    height: 100%;
 }
 
 .project-card .box-img {
@@ -29404,15 +29414,15 @@ input {
 
 .project-card .box-title {
     font-weight: 700;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 20px;
     text-transform: capitalize;
     color: #0A0A0C;
+    margin-top: -32px;
 }
 
 @media (max-width: 1299px) {
     .project-card .box-title {
-        font-size: 24px;
+        font-size: 18px;
     }
 }
 
@@ -29421,12 +29431,13 @@ input {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    gap: 7px;
+    /* gap: 7px; */
     font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 0.02em;
+    font-size: 14px;
+    /* letter-spacing: 0.02em; */
     color: #4E4E4E;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
+    margin-top: -5px;
 }
 
 .project-card .icon-btn {
@@ -29544,7 +29555,6 @@ input {
     top: 0;
     width: 100%;
     height: 100%;
-
     z-index: -1;
     border-radius: 8px;
     opacity: 0;
@@ -34554,4 +34564,77 @@ input {
     width: 100% !important;
     height: 400px !important;
     object-fit: cover !important;
+}
+
+.team-desc {
+    font-size: 14px;
+    margin-top: -22px;
+
+}
+
+.box-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.box-img img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Black shadow gradient at bottom */
+.box-img::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 45%;
+    /* adjust height of the shadow */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    z-index: 1;
+}
+
+/* Text on top of image */
+.img-content {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    color: #fff;
+    z-index: 2;
+}
+
+.img-content h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: white !important;
+}
+
+.img-content p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    opacity: 0.9;
+    color: white !important;
+}
+
+.hero-form {
+    display: none;
+}
+
+.hero-form.active {
+    display: block;
+}
+
+.tab-btn {
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tab-btn.active {
+    background: var(--theme-color, #fff);
+    color: #fff;
 }
