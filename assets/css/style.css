@@ -27790,7 +27790,7 @@ input {
 }
 
 .popular-list-1 .property-content {
-    padding: 30px 0 32px
+    padding: 15px 0 23px;
 }
 
 .popular-list-1 .media-body {
@@ -27918,7 +27918,7 @@ input {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 32px 30px 0;
+    padding: 8px 30px 0;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap
@@ -29568,7 +29568,7 @@ input {
     transition: .4s;
     position: relative;
     z-index: 3;
-    padding: 20px
+    padding: 10px
 }
 
 .gallery-card .gallery-content-wrapper:before {
@@ -29610,7 +29610,8 @@ input {
 .gallery-card .box-title {
     margin-bottom: 0;
     color: var(--white-color);
-    font-size: 24px
+    font-size: 24px;
+    margin-left: 27px;
 }
 
 .gallery-card .box-text {
@@ -29724,9 +29725,9 @@ input {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
+    -webkit-justify-content: center;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: center;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
@@ -29741,7 +29742,9 @@ input {
     transition: inherit;
     opacity: 0;
     -webkit-transition: .4s;
-    transition: .4s
+    transition: .4s;
+    margin-left: 8px;
+
 }
 
 .gallery-card.style-2 .gallery-content .gallery-content-wrapper .link a {
@@ -34620,13 +34623,16 @@ input {
     z-index: 1;
 }
 
-/* Text on top of image */
+/* Text centered on image */
 .img-content {
     position: absolute;
-    bottom: 15px;
-    left: 20px;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    text-align: center;
     color: #fff;
     z-index: 2;
+    width: 100%;
 }
 
 .img-content h4 {
@@ -34637,11 +34643,12 @@ input {
 }
 
 .img-content p {
-    margin: 5px 0 0;
+    margin: 2px 0 15px;
     font-size: 14px;
     opacity: 0.9;
     color: white !important;
 }
+
 
 .hero-form {
     display: none;
@@ -34666,4 +34673,58 @@ input {
 .space-faq {
     padding-top: 120px !important;
     padding-bottom: 120px !important;
+}
+
+.gallery-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.properties-content {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    right: 20px;
+    color: #fff;
+    z-index: 2;
+}
+
+.properties-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #f0c14b;
+
+}
+
+.properties-desc {
+    font-size: 14px;
+    margin-bottom: 8px;
+    line-height: 1.4;
+    color: #fff;
+
+}
+
+.properties-link {
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+.properties-link:hover {
+    color: #f0c14b;
+}
+
+.properties-location {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.properties-location i {
+    color: #fff;
 }
