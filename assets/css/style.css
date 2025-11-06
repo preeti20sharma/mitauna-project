@@ -34547,7 +34547,7 @@ input {
 }
 
 .city-card {
-    width: 296px !important;
+    /* width: 296px !important; */
     height: 200px !important;
 }
 
@@ -34582,7 +34582,7 @@ input {
 }
 
 .views-card {
-    width: 296px !important;
+    /* width: 296px !important; */
     height: 400px !important;
 }
 
