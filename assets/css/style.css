@@ -3616,7 +3616,7 @@ textarea.is-invalid {
 
 .sec-title {
     margin-top: -0.2em;
-    font-size: 40px
+    font-size: 30px;
 }
 
 .title-area:has(.sec-title) {
@@ -11566,11 +11566,17 @@ ol.wp-block-rss {
 }
 
 .breadcumb-wrapper {
-    --space: 165px;
+    --space: 130px;
     padding: calc(var(--space)) 0 var(--space);
     text-align: start;
     position: relative;
-    z-index: 2
+    z-index: 2;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
 }
 
 .breadcumb-wrapper::before {
@@ -11579,10 +11585,11 @@ ol.wp-block-rss {
     width: 100%;
     height: 100%;
     inset: 0;
-    background: -webkit-linear-gradient(204deg, #000 0%, #03060E 100%);
-    background: linear-gradient(246deg, #000 0%, #03060E 100%);
+    background: rgba(0, 0, 0, 0.6);
     opacity: .7;
-    z-index: -1
+    z-index: -1;
+    border-radius: 20px;
+
 }
 
 .breadcumb-wrapper::before {
@@ -24748,7 +24755,7 @@ input {
 .blog-area2 {
     background-color: var(--white-color);
     border-radius: 0 0 50px 50px;
-    margin-bottom: -100px;
+    margin-bottom: 0px;
     position: relative;
     z-index: 3
 }
@@ -34727,4 +34734,45 @@ input {
 
 .properties-location i {
     color: #fff;
+}
+
+.title-area {
+    position: relative;
+    text-align: left;
+    overflow: visible;
+    margin-top: 60px;
+    /* give breathing room */
+}
+
+.shadow-title {
+    position: absolute;
+    top: -10px;
+    /* pushes shadow title above */
+    left: 0;
+    font-size: 100px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.04);
+    /* subtle for light bg */
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    line-height: 1;
+    font-family: 'Poppins', sans-serif;
+    z-index: 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+.sub-title,
+.sec-title,
+.sec-text {
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width: 768px) {
+    .shadow-title {
+        font-size: 60px;
+        /* top: -20px; */
+        opacity: 0.06;
+    }
 }
