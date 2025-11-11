@@ -25646,6 +25646,7 @@ input {
     z-index: 2
 }
 
+
 .why-sec-1:before {
     content: "";
     width: 100%;
@@ -27015,12 +27016,12 @@ input {
     }
 }
 
-.th-faq-wrapper .accordion-card .accordion-button {
+/* .th-faq-wrapper .accordion-card .accordion-button {
     background: var(--smoke-color)
-}
+} */
 
 .th-faq-wrapper .accordion-card .accordion-body {
-    background: var(--smoke-color)
+    background: #EBF4F1;
 }
 
 .service-card:hover .box-content .icon-wrap img {
@@ -35009,4 +35010,54 @@ input {
 .sec-titles span {
 
     color: #DEFFB9;
+}
+
+.webkit-height {
+    height: -webkit-fill-available;
+}
+
+@media(min-width:768px) {
+    .why-sec-2 {
+        margin: 30px;
+        padding: 20px;
+        border-radius: 35px;
+    }
+}
+
+
+.timeline {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    padding-left: 30px;
+    border-left: 2px solid #104A3A;
+}
+
+.timeline-step {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.dot {
+    position: absolute;
+    left: -40px;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(180deg, #104A3A, #176653);
+    ;
+    border-radius: 50%;
+    /* box-shadow: 0 0 8px #00ffd5; */
+}
+
+.content h3 {
+    margin: 0 0 6px;
+    font-size: 1.2rem;
+    color: #104A3A;
+}
+
+.content p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--body-color);
 }
