@@ -5,7 +5,7 @@
     --theme-color2: #FE8900;
     --theme-color3: #FFC000;
     --title-color: #104A3A;
-    --body-color: #5E7C6C;
+    --body-color: #111827;
     --smoke-color: #F6F2F1;
     --smoke-color2: #F5F5F5;
     --black-color: #111827;
@@ -22054,13 +22054,13 @@ input {
     height: 72px;
     line-height: 72px;
     text-align: center;
-    background: #F6F2F1;
+    background: #EBF4F1;
     border-radius: 16px;
     margin-bottom: 16px
 }
 
 .about-item .box-content {
-    background-color: #F6F2F1;
+    background-color: #EBF4F1;
     -webkit-mask-image: url("../img/about/about-shape2.png");
     mask-image: url("../img/about/about-shape2.png");
     -webkit-mask-size: auto;
@@ -22085,7 +22085,7 @@ input {
 }
 
 .about-item .box-img {
-    max-width: 438px;
+    max-width: 343px;
     height: 175px;
     display: block;
     margin-left: auto;
@@ -22095,7 +22095,7 @@ input {
 
 @media (max-width: 1699px) {
     .about-item .box-img {
-        max-width: 400px
+        max-width: 343px
     }
 }
 
@@ -34789,14 +34789,13 @@ input {
 }
 
 /* Black shadow gradient at bottom */
-.box-img::after {
+.project-card .box-img::after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 45%;
-    /* adjust height of the shadow */
     background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
     z-index: 1;
 }
