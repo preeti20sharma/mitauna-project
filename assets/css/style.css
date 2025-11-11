@@ -11721,12 +11721,9 @@ ol.wp-block-rss {
     text-align: start;
     position: relative;
     z-index: 2;
-    margin-left: 30px;
-    margin-right: 30px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 20px;
 }
 
 .breadcumb-wrapper::before {
@@ -11738,7 +11735,6 @@ ol.wp-block-rss {
     background: rgba(0, 0, 0, 0.6);
     opacity: .7;
     z-index: -1;
-    border-radius: 20px;
 
 }
 
@@ -34679,16 +34675,16 @@ input {
 }
 
 @media (max-width: 991px) {
-
+    /* 
     .space,
     .space-top {
         padding-top: var(--section-space-mobile)
-    }
-
+    } */
+    /* 
     .space,
     .space-bottom {
         padding-bottom: var(--section-space-mobile)
-    }
+    } */
 
     .space-extra,
     .space-extra-top {
@@ -35009,8 +35005,8 @@ input {
 @media (max-width: 768px) {
     .shadow-title {
         font-size: 60px;
-        /* top: -20px; */
-        opacity: 0.06;
+        top: -350px;
+        /* opacity: 0.06; */
     }
 }
 
