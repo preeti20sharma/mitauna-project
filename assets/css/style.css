@@ -116,6 +116,11 @@ ul {
     list-style-type: disc
 }
 
+ul li {
+    color: #DEE1EB;
+    font-size: 14px;
+}
+
 ol {
     list-style-type: decimal
 }
@@ -3875,7 +3880,7 @@ textarea.is-invalid {
 }
 
 .box-title {
-    font-size: 24px;
+    font-size: 18px;
     line-height: 1.417;
     font-weight: 600;
     margin-top: -0.32em
@@ -25823,7 +25828,7 @@ input {
 .why-card-1.style-2 {
     position: relative;
     text-align: start;
-    padding: 40px;
+    padding: 18px;
     background-size: cover !important;
     background-repeat: no-repeat;
     background-position: center center;
@@ -25883,15 +25888,15 @@ input {
 .why-card-1.style-2 .count {
     position: absolute;
     right: 40px;
-    font-size: 57px;
+    font-size: 40px;
     color: #DEFFB9;
     opacity: .2;
-    top: 37px
+    top: 8px
 }
 
 @media (max-width: 1600px) {
     .why-card-1.style-2 .box-title {
-        width: 75%
+        width: 90%
     }
 }
 
@@ -25903,7 +25908,7 @@ input {
 
 @media (max-width: 375px) {
     .why-card-1.style-2 .count {
-        font-size: 47px;
+        font-size: 27px;
         right: 10px
     }
 }
