@@ -116,7 +116,7 @@ ul {
     list-style-type: disc
 }
 
-ul li {
+.why-card-1__content ul li {
     color: #DEE1EB;
     font-size: 14px;
 }
