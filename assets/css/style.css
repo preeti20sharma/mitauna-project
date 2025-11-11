@@ -22309,6 +22309,21 @@ input {
     object-fit: cover
 }
 
+
+.img-box8 .imgs img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.img-box8 .imgs img:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
 .choose-content {
     position: relative;
     z-index: 2
@@ -35060,4 +35075,43 @@ input {
     margin: 0;
     font-size: 0.95rem;
     color: var(--body-color);
+}
+
+
+.list-for li {
+    position: relative;
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #222;
+    line-height: 1.6;
+}
+
+.list-for {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-for li {
+    display: flex;
+    align-items: flex-start;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.list-for li i {
+    color: var(--title-color);
+    /* your brand green */
+    font-size: 18px;
+    margin-right: 10px;
+    margin-top: 3px;
+    transition: all 0.3s ease;
+}
+
+.list-for li:hover i {
+    color: #0f5132;
+    /* darker green on hover */
+    transform: scale(1.1);
 }
