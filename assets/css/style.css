@@ -35016,11 +35016,12 @@ input {
     text-transform: uppercase;
     letter-spacing: 6px;
     line-height: 1;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair', sans-serif;
     z-index: 0;
     pointer-events: none;
     user-select: none;
 }
+
 
 .sub-title,
 .sec-title,
