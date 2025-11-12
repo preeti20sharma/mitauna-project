@@ -35030,13 +35030,14 @@ input {
     z-index: 2;
 }
 
+/* 
 @media (max-width: 768px) {
     .shadow-title {
         font-size: 60px;
         top: -317px;
-        /* opacity: 0.06; */
+        opacity: 0.06;
     }
-}
+} */
 
 .sec-titles {
     font-size: 38px;
