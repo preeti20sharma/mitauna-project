@@ -11735,7 +11735,7 @@ ol.wp-block-rss {
 }
 
 .breadcumb-wrapper {
-    --space: 200px;
+    --space: 180px;
     padding: calc(var(--space)) 0 var(--space);
     text-align: start;
     position: relative;
