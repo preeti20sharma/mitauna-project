@@ -20507,7 +20507,8 @@ span.select2-selection.select2-selection--single:focus {
     align-items: center;
     position: relative;
     border-radius: 16px;
-    background-color: var(--smoke-color)
+    background-color: #EBF4F1;
+    height: 100%;
 }
 
 .contact-feature:not(:last-child) {
@@ -20651,7 +20652,7 @@ span.select2-selection.select2-selection--single:focus {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    background: var(--smoke-color);
+    background: #EBF4F1;
     overflow: hidden;
     border-radius: 24px 0 0 24px
 }
