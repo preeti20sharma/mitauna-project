@@ -2581,7 +2581,7 @@ textarea.is-invalid {
     border-bottom: 1px solid #104A3A;
     padding-bottom: 5px;
     padding-top: 5px;
-    margin-top: 22px;
+    margin-top: 23px;
 }
 
 .nice-select.disabled {
@@ -35148,4 +35148,75 @@ input {
 
 .search-color {
     background-color: #061F18;
+}
+
+/* highlight end */
+.form-section {
+    border: 1px solid #fff;
+    margin: 35px;
+    padding: 2px;
+    border-radius: 15px;
+}
+
+
+.contacts-form {
+    border: 1px solid #f3eaea;
+    margin: 0 8px 0 8px;
+    padding: 2px;
+    border-radius: 15px;
+    background-color: #1C352D;
+}
+
+.back-color {
+    background-color: #fff !important;
+}
+
+.popup-img img {
+    width: 400px;
+    height: 380px;
+    border-radius: 15px;
+
+}
+
+.right-form {
+    padding: 15px;
+    margin-left: 10px;
+    width: 380px;
+}
+
+.modal-body {
+    margin: 0 8px 0 18px;
+}
+
+
+
+.custom-close {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #947251, #c9a77e);
+    position: relative;
+    opacity: 1 !important;
+    border: none;
+}
+
+.custom-close::after {
+    content: "✕";
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.custom-close:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.submit-form-btn {
+    background-color: #947251;
+    color: #fff;
 }
