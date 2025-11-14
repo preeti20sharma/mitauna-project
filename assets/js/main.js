@@ -72,7 +72,7 @@
     }, e(".th-menu-wrapper").thmobilemenu(), t(".onepage-nav"), t(".scroll-down"), e(window).on("scroll", (function () {
         e(".onepage-nav").length
     })), e(window).scroll((function () {
-        e(this).scrollTop() > 500 ? (e(".sticky-wrapper").addClass("sticky"), e(".category-menu").addClass("close-category")) : (e(".sticky-wrapper").removeClass("sticky"), e(".category-menu").removeClass("close-category"))
+        e(this).scrollTop() > 0 ? (e(".sticky-wrapper").addClass("sticky"), e(".category-menu").addClass("close-category")) : (e(".sticky-wrapper").removeClass("sticky"), e(".category-menu").removeClass("close-category"))
     })), e(".menu-expand").each((function () {
         e(this).on("click", (function (t) {
             t.preventDefault(), e(".category-menu").toggleClass("open-category")
