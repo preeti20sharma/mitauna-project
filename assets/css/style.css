@@ -6445,7 +6445,7 @@ a.text-theme:hover,
 }
 
 .widget.sidebar-contact-form {
-    background: var(--smoke-color)
+    background: #EBF4F1;
 }
 
 .widget.widget_banner .widget-banner {
@@ -27219,7 +27219,8 @@ input {
 }
 
 .page-img img {
-    width: 100%
+    width: 100%;
+    height: 420px;
 }
 
 .page-single {
