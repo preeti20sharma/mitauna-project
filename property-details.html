@@ -166,6 +166,85 @@
                 </div>
             </div>
         </header>
+        <!-- Contact Form Modal -->
+        <div class="modal fade mt-4" id="contactModal" tabindex="-1"
+            aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div
+                class="modal-dialog modal-dialog-centered modal-lg"><!-- modal-lg for wider popup -->
+                <div class="modal-content rounded-3 border-0 shadow">
+
+                    <!-- Close Button -->
+                    <button type="button"
+                        class="btn-close custom-close ms-auto m-2 "
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+
+                    <!-- Modal Body -->
+                    <div class="modal-body p-0 ">
+                        <div class="d-flex ">
+
+                            <!-- Left Image -->
+                            <div class="popup-img d-none d-sm-block mb-4">
+                                <img
+                                    src="assets/img/property-values/property-values-3-3.jpg"
+                                    alt="form"
+                                    class="shadow  "
+                                    style="object-fit:cover;" />
+                            </div>
+
+                            <!-- Right Form -->
+                            <div class="right-form flex-grow-1">
+                                <h4 class="text-black mb-3">Get In Touch
+                                </h4>
+
+                                <form>
+                                    <div class="row g-3">
+                                        <div class="col-md-12">
+                                            <div class="form-floating">
+                                                <input type="text"
+                                                    class="form-control bg-transparent border-1"
+                                                    id="name"
+                                                    placeholder="Your Name">
+                                                <label for="name">Your
+                                                    Name</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div class="form-floating">
+                                                <input type="email"
+                                                    class="form-control bg-transparent border-1"
+                                                    id="email"
+                                                    placeholder="Your Email">
+                                                <label for="email">Your
+                                                    Email</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div class="form-floating">
+                                                <input type="number"
+                                                    class="form-control bg-transparent border-1"
+                                                    id="phone"
+                                                    placeholder="Your Phone Number">
+                                                <label for="phone">Your
+                                                    Phone number</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <button
+                                                class="btn submit-form-btn w-100 py-3"
+                                                type="submit">Book
+                                                Now</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <section class="property-details space-bottom ">
             <div class="container">
@@ -341,14 +420,15 @@
                                         pariatur</p>
                                     <div class="d-flex justify-content-start">
                                         <div class="sec-btn">
-                                            <a href="contact.html"
-                                                class="th-btn style7">
-                                                Download Broucher <span
+                                            <a href="#contactModal"
+                                                class="th-btn style7"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#contactModal">
+                                                Download Brochure <span
                                                     class="arrow">➜</span>
                                             </a>
                                         </div>
                                     </div>
-
                                     <div
                                         class=" mb-25 fadeinup wow"
                                         id="highlights">
@@ -663,10 +743,12 @@
                                                         class="d-flex justify-content-start">
                                                         <div class="sec-btn">
                                                             <a
-                                                                href="contact.html"
-                                                                class="th-btn style7">
-                                                                Download Floor
-                                                                Plan <span
+                                                                href="#contactModal"
+                                                                class="th-btn style7"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#contactModal">
+                                                                Download
+                                                                Brochure <span
                                                                     class="arrow">➜</span>
                                                             </a>
                                                         </div>
@@ -723,10 +805,12 @@
                                                         class="d-flex justify-content-start">
                                                         <div class="sec-btn">
                                                             <a
-                                                                href="contact.html"
-                                                                class="th-btn style7">
-                                                                Download Floor
-                                                                Plan <span
+                                                                href="#contactModal"
+                                                                class="th-btn style7"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#contactModal">
+                                                                Download
+                                                                Brochure <span
                                                                     class="arrow">➜</span>
                                                             </a>
                                                         </div>
@@ -783,10 +867,12 @@
                                                         class="d-flex justify-content-start">
                                                         <div class="sec-btn">
                                                             <a
-                                                                href="contact.html"
-                                                                class="th-btn style7">
-                                                                Download Floor
-                                                                Plan <span
+                                                                href="#contactModal"
+                                                                class="th-btn style7"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#contactModal">
+                                                                Download
+                                                                Brochure <span
                                                                     class="arrow">➜</span>
                                                             </a>
                                                         </div>
@@ -905,35 +991,10 @@
             </div>
         </section>
         <footer class="real-footer">
-            <div class="footer-container">
-
-                <div class="footer-col">
-                    <h4>About Us</h4>
-                    <p>Your trusted real estate partner offering residential and
-                        commercial property solutions.</p>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Floor Plans</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Policies</h4>
-                    <p><strong>Disclaimer:</strong> All property details are for
-                        reference only. Please verify independently.</p>
-                    <p><strong>Privacy:</strong> Your information is secure and
-                        used only for enquiry support.</p>
-                </div>
-
-            </div>
-
             <div class="footer-bottom">
+                <p><strong>Disclaimer:</strong> All property details are for
+                    reference only. Please verify independently before making
+                    any decisions.</p>
                 <p>© 2025 developed by Aajneeti Connect Ltd. All Rights
                     Reserved.</p>
             </div>
@@ -962,6 +1023,14 @@
         <script src="assets/js/ScrollTrigger.min.js"></script>
         <script src="assets/js/SplitText.min.js"></script>
         <script src="assets/js/main.js"></script>
+        <script>
+                window.addEventListener('load', function () {
+                setTimeout(function(){
+                var myModal = new bootstrap.Modal(document.getElementById('contactModal'));
+                myModal.show();
+                 }, 5000); 
+                 });
+       </script>
     </body>
 
 </html>
