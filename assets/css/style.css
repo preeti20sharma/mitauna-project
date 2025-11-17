@@ -35614,3 +35614,47 @@ input {
     width: 14px;
     height: 14px;
 }
+
+/* Floating WhatsApp Button */
+.whatsapp-chatbot {
+    position: fixed;
+    bottom: 90px;
+    right: 35px;
+    z-index: 99999;
+}
+
+.whatsapp-btn {
+    width: 50px;
+    height: 50px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    animation: floatUp 0.4s ease-in-out;
+    transition: 0.3s ease;
+}
+
+.whatsapp-btn img {
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* Smooth entry animation */
+@keyframes floatUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
