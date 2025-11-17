@@ -35519,3 +35519,52 @@ input {
 .real-footer {
     border-top: 1px solid #374151;
 }
+
+.testi-card {
+    margin: 20px;
+    background: #EBF4F1;
+    border-radius: 18px;
+    padding: 45px;
+    transition: all .3s ease;
+    border: 2px solid transparent;
+    height: 80%;
+}
+
+.testi-card:hover {
+    transform: translateY(-8px);
+    border-color: #20783B;
+    box-shadow: 0 10px 35px rgba(32, 120, 59, 0.18);
+}
+
+.testi-content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.testi-user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.testi-user img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #20783B;
+    padding: 3px;
+}
+
+.testi-user h5 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #20783B;
+}
+
+.testi-user span {
+    font-size: 14px;
+    color: #555;
+}
