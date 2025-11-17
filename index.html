@@ -210,7 +210,7 @@
                                         data-target="#buyForm">Buyer <span
                                             class="arrow">➜</span></button>
                                     <button class="pill tabs-btn"
-                                        data-target="#rentForm">Investor <span
+                                        data-target="#RentForm">Investor <span
                                             class="arrow">➜</span></button>
                                 </div>
                                 <div class="hero-search-wrapper fadeinup wow"
@@ -285,7 +285,7 @@
                                     </form>
 
                                     <!--  invester Form -->
-                                    <form action="#" id="rentForm"
+                                    <form action="#" id="RentForm"
                                         class="hero-form">
                                         <div class="hero-search-group-wrapper">
 
@@ -1365,7 +1365,7 @@
                             </div>
                             <div class="col-auto">
                                 <div class="sec-btn"><a
-                                        href="contact.html"
+                                        href="location.html"
                                         class="th-btn style7">Know More
                                         <span
                                             class="arrow">➜</span></a></div>
@@ -1822,7 +1822,7 @@
                             </div>
                             <div class="col-auto">
                                 <div class="sec-btn"><a
-                                        href="contact.html"
+                                        href="about.html"
                                         class="th-btn style7">Know More
                                         <span
                                             class="arrow">➜</span></a></div>
@@ -2329,20 +2329,21 @@
                                                         <ul
                                                             class="menu">
                                                             <li><a
-                                                                    href="service.html">Strategy
-                                                                    Services</a></li>
+                                                                    href="about.html">About
+                                                                </a></li>
                                                             <li><a
-                                                                    href="service.html">Management</a></li>
+                                                                    href="portfolio.html">Portfolio</a></li>
                                                             <li><a
-                                                                    href="service.html">Privacy
-                                                                    &
-                                                                    Policy</a></li>
+                                                                    href="location.html">Location
+
+                                                                </a></li>
                                                             <li><a
-                                                                    href="service.html">Sitemap</a></li>
+                                                                    href="blog.html">Blog</a></li>
                                                             <li><a
-                                                                    href="service.html">Term
-                                                                    &
-                                                                    Conditions</a></li>
+                                                                    href="contact.html">Contact
+                                                                    Us
+
+                                                                </a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -2351,25 +2352,29 @@
                                                 <div
                                                     class="widget widget_nav_menu footer-widget">
                                                     <h3
-                                                        class="widget_title">Support</h3>
+                                                        class="widget_title">Projects</h3>
                                                     <div
                                                         class="menu-all-pages-container">
                                                         <ul
                                                             class="menu">
                                                             <li><a
-                                                                    href="contact.html">Help
-                                                                    Center</a></li>
+                                                                    href="all-projects.html">All
+                                                                    Projects
+                                                                </a></li>
                                                             <li><a
-                                                                    href="service.html">FAQs</a></li>
+                                                                    href="ready-to-move.html">Ready
+                                                                    To
+                                                                    Move</a></li>
                                                             <li><a
-                                                                    href="contact.html">Contact
-                                                                    Us</a></li>
+                                                                    href="under-construction.html">Under
+                                                                    Construction
+                                                                    Projects
+                                                                </a></li>
                                                             <li><a
-                                                                    href="contact.html">Ticket
-                                                                    Support</a></li>
-                                                            <li><a
-                                                                    href="contact.html">Live
-                                                                    Chat</a></li>
+                                                                    href="new-launch.html">New
+                                                                    Launches
+                                                                    Projects
+                                                                </a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -2426,10 +2431,9 @@
                                     <p class="copyright-text">Copyright
                                         <i class="fal fa-copyright"></i>
                                         2025 <a
-                                            href="index.html">Mitauna</a>.
-                                        All
-                                        Rights
-                                        Reserved.
+                                            href="index.html">Developed By
+                                            Aajneeti Connect Ltd</a>.
+
                                     </p>
                                 </div>
                                 <div class="col-auto">
@@ -2489,19 +2493,17 @@
                 <script src="assets/js/SplitText.min.js"></script>
                 <script src="assets/js/main.js"></script>
                 <script>
-        $(".tab-btn").click(function() {
-            // Remove active state from all tabs
-            $(".tab-btn").removeClass("active");
-            $(this).addClass("active");
+                   $(".tabs-btn").click(function() {
+                   $(".tabs-btn").removeClass("active");
+                   $(this).addClass("active");
 
-            // Hide all forms
-            $(".hero-form").removeClass("active");
+                  $(".hero-form").removeClass("active");
 
-            // Show target form
-            const target = $(this).data("target");
-            $(target).addClass("active");
-        });
-    </script>
+                 const target = $(this).data("target");
+                 $(target).addClass("active");
+                 });
+               </script>
+
                 <script>
                 window.addEventListener('load', function () {
                 setTimeout(function(){
