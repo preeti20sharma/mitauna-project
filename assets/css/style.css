@@ -3274,34 +3274,7 @@ textarea.is-invalid {
 .th-btn.style7:hover .arrow {
     background: #104A3A;
     color: #DEFFB9;
-    transform: rotate(90deg);
 }
-
-/* 
-.tabs-btn.active .arrow {
-    background: #104A3A;
-    color: #DEFFB9;
-
-
-}
-
-.tabs-btn.active .arrow {
-    background: #104A3A;
-    color: #DEFFB9;
-
-
-}
-
-.tabs-btn.active:hover {
-    background: linear-gradient(180deg, #104A3A, #176653);
-    color: #DEFFB9;
-}
-
-.tabs-btn.active:hover .arrow {
-    background: #DEFFB9;
-    color: #104A3A;
-    transform: rotate(90deg);
-} */
 
 
 .th-btn.style7:hover:before,
@@ -14022,7 +13995,6 @@ ul.comment-list:has(>.th-comment-item ~ .th-comment-item):first-child>.th-post-c
     font-size: 14px;
     margin-bottom: -7px;
     text-align: start;
-    margin-left: 10px;
 }
 
 .hero-search-wrapper .hero-search-group-wrapper .advance-btn-wrapper {
@@ -29598,12 +29570,38 @@ input {
     }
 }
 
+.swiper-slide {
+    height: auto !important;
+    display: flex;
+}
+
+.project-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card .project-content {
+    flex-grow: 1;
+}
+
+
+
+.project-card .col-auto {
+    margin-top: auto;
+    /* Push button to bottom */
+}
+
+.project-card a {
+    display: inline-block;
+}
+
 .project-card {
     background: #FFFFFF;
     border-radius: 20px;
     padding: 16px 20px 14px 20px;
-    height: 100%;
 }
+
 
 .project-card .box-img {
     border-radius: 20px;
@@ -29613,6 +29611,7 @@ input {
 .project-card .box-img img {
     width: 100%;
     border-radius: 20px;
+    height: auto;
 }
 
 .project-card .box-wrapp {
@@ -35196,7 +35195,7 @@ input {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #947251, #c9a77e);
+    background: #0c3b2e;
     position: relative;
     opacity: 1 !important;
     border: none;
@@ -35219,7 +35218,7 @@ input {
 }
 
 .submit-form-btn {
-    background-color: #947251;
+    background: #0c3b2e;
     color: #fff;
 }
 
@@ -35619,13 +35618,13 @@ input {
 .whatsapp-chatbot {
     position: fixed;
     bottom: 90px;
-    right: 35px;
+    right: 32px;
     z-index: 99999;
 }
 
 .whatsapp-btn {
-    width: 50px;
-    height: 50px;
+    width: 52px;
+    height: 52px;
     background-color: #25D366;
     border-radius: 50%;
     display: flex;
@@ -35656,5 +35655,30 @@ input {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+.custom-consult-btn {
+    display: inline-block;
+    background-color: #0C3B2E;
+    color: #fff;
+    padding: 10px 23px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.custom-consult-btn:hover {
+    background-color: #0a2f25;
+    color: #fff;
+    /* slightly darker shade */
+    transform: translateY(-2px);
+}
+
+@media(min-width:768px) {
+    .container-expert {
+        padding: 0 120px;
     }
 }
