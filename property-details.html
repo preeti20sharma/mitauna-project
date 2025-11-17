@@ -193,11 +193,11 @@
 
                             <!-- Right Form -->
                             <div class="right-form flex-grow-1">
-                                <h4 class="text-black mb-3">Get In Touch
-                                </h4>
-
-                                <form>
+                                <p> Please fill the given form</p>
+                                <form class="small-form">
                                     <div class="row g-3">
+
+                                        <!-- Name -->
                                         <div class="col-md-12">
                                             <div class="form-floating">
                                                 <input type="text"
@@ -209,6 +209,7 @@
                                             </div>
                                         </div>
 
+                                        <!-- Email -->
                                         <div class="col-md-12">
                                             <div class="form-floating">
                                                 <input type="email"
@@ -220,23 +221,69 @@
                                             </div>
                                         </div>
 
+                                        <!-- Phone -->
                                         <div class="col-md-12">
                                             <div class="form-floating">
                                                 <input type="number"
                                                     class="form-control bg-transparent border-1"
                                                     id="phone"
                                                     placeholder="Your Phone Number">
-                                                <label for="phone">Your
-                                                    Phone number</label>
+                                                <label for="phone">Your Phone
+                                                    Number</label>
                                             </div>
                                         </div>
 
+                                        <!-- Select Expert -->
+                                        <div class="col-md-12">
+                                            <div class="form-floating">
+                                                <select
+                                                    class="form-select bg-transparent border-1"
+                                                    id="expert">
+                                                    <option selected
+                                                        hidden>Select
+                                                        Expert</option>
+                                                    <option
+                                                        value="real-estate">Real
+                                                        Estate Expert</option>
+                                                    <option
+                                                        value="investment">Investment
+                                                        Advisor</option>
+                                                    <option
+                                                        value="property">Property
+                                                        Consultant</option>
+                                                    <option
+                                                        value="financial">Financial
+                                                        Expert</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+
+                                        <!-- Checkbox Declaration -->
+                                        <div class="col-12">
+                                            <div class="form-check mt-2">
+                                                <input class="form-check-input"
+                                                    type="checkbox" value
+                                                    id="declaration">
+                                                <label
+                                                    class="form-check-label text-dark"
+                                                    for="declaration">
+                                                    I agree that the information
+                                                    provided is correct and give
+                                                    consent to contact me.
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <!-- Submit -->
                                         <div class="col-12">
                                             <button
                                                 class="btn submit-form-btn w-100 py-3"
-                                                type="submit">Book
-                                                Now</button>
+                                                type="submit">
+                                                Book Now
+                                            </button>
                                         </div>
+
                                     </div>
                                 </form>
                             </div>

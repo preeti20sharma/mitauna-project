@@ -14021,7 +14021,8 @@ ul.comment-list:has(>.th-comment-item ~ .th-comment-item):first-child>.th-post-c
     font-weight: 600;
     font-size: 14px;
     margin-bottom: -7px;
-    text-align: start
+    text-align: start;
+    margin-left: 10px;
 }
 
 .hero-search-wrapper .hero-search-group-wrapper .advance-btn-wrapper {
@@ -35567,4 +35568,49 @@ input {
 .testi-user span {
     font-size: 14px;
     color: #555;
+}
+
+.form-select {
+    color: #000;
+}
+
+.form-check-label {
+    font-size: 14px;
+}
+
+/* Apply only inside .small-form */
+.small-form .form-control,
+.small-form .form-select {
+    height: 42px !important;
+    /* Smaller height */
+    padding: 6px 12px !important;
+    /* Compact padding */
+    font-size: 14px !important;
+    /* Smaller text */
+}
+
+/* Floating label smaller */
+.small-form .form-floating>label {
+    font-size: 13px !important;
+    padding: 10px 12px !important;
+}
+
+/* Fix floating wrapper height */
+.small-form .form-floating {
+    height: 40px !important;
+}
+
+/* Reduce spacing between inputs */
+.small-form .row.g-3 {
+    --bs-gutter-y: 0.5rem !important;
+}
+
+/* Checkbox smaller */
+.small-form .form-check-label {
+    font-size: 13px !important;
+}
+
+.small-form .form-check-input {
+    width: 14px;
+    height: 14px;
 }
