@@ -4059,10 +4059,6 @@ hr.title-line {
         margin-bottom: 20px
     }
 
-    .shadow-title {
-        font-size: 64px
-    }
-
     .title-area,
     .sec-title {
         --section-title-space: 60px
@@ -4100,9 +4096,6 @@ hr.title-line {
 }
 
 @media (max-width: 991px) {
-    .shadow-title {
-        font-size: 60px
-    }
 
     .title-area,
     .sec-title {
@@ -4145,9 +4138,6 @@ hr.title-line {
 }
 
 @media (max-width: 575px) {
-    .shadow-title {
-        font-size: 52px
-    }
 
     .title-area .big-heading {
         font-size: 55px;
@@ -4166,9 +4156,6 @@ hr.title-line {
 }
 
 @media (max-width: 375px) {
-    .shadow-title {
-        font-size: 40px
-    }
 
     .title-area2 {
         padding: 40px 20px
@@ -11464,11 +11451,11 @@ ol.wp-block-rss {
     }
 }
 
-@media (max-width: 1199px) {
+/* @media (max-width: 1199px) {
     .footer-default.footer-layout3 .widget-area {
         padding: 100px 0 120px
     }
-}
+} */
 
 .footer-layout3 .footer-image {
     height: 224px
@@ -35014,12 +35001,10 @@ input {
 .shadow-title {
     position: absolute;
     top: -38px;
-    /* pushes shadow title above */
     left: 16px;
     font-size: 100px;
     font-weight: 800;
     color: rgba(0, 0, 0, 0.04);
-    /* subtle for light bg */
     text-transform: uppercase;
     letter-spacing: 6px;
     line-height: 1;
@@ -35027,6 +35012,15 @@ input {
     z-index: 0;
     pointer-events: none;
     user-select: none;
+}
+
+@media(max-width:576px) {
+    .shadow-title {
+
+        top: -34px;
+        left: 16px;
+        font-size: 70px;
+    }
 }
 
 
@@ -35181,7 +35175,6 @@ input {
 
 .right-form {
     padding: 15px;
-    margin-left: 10px;
     width: 380px;
 }
 
